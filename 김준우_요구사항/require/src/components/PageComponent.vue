@@ -1,19 +1,29 @@
 <template>
     <div class="page">
         <h1>1 페이지 입니다</h1>
-        <p>{{data.board[0].memo}}</p>
+        
+      
+        <li v-for="item in test" :key="item.name">
+
+          <div>
+              <img width="200" height="150" :src="item.image_url"/>
+              {{item.name}}
+          </div>
+        </li>
     </div>
 </template>
 
 
 
 <script>
-import data from '@/assets/data.json'
+import test from '@/assets/test.json'
+
+
 export default {
     name : 'PageComponent',
     data : function(){
       return{
-        data : data,
+        test : test,
       }
     }
 }

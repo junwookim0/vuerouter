@@ -1,0 +1,14 @@
+[
+    {
+		"name": "이미지1",
+		"image_url": "./1.jpg"
+	},
+    {
+		"name": "이미지2",
+		"image_url": "2.jpg"
+	},
+    {
+		"name": "이미지3",
+		"image_url": "./img/3.jpg"
+	}
+]
