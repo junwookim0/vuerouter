@@ -10,7 +10,7 @@
         <td>
         {{board.id}}
         </td>
-        <td @click="$router.push(`/board/${board.id}`)" >
+        <td @click="addcount($router.push(`/board/${board.id}`))" >
         {{board.title}}
         </td>
 
