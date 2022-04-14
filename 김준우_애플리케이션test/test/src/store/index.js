@@ -13,8 +13,8 @@ export default new Vuex.Store({
       { id:1, memo: "첫번째 메모입니다"},
       { id:2, memo: "두번째 메모입니다"},
     ],
-
   },
+
   getters: {},
   mutations: {
     addtitle: function (state, title) {
@@ -29,7 +29,8 @@ export default new Vuex.Store({
 
     addcount: function(state){
       state.board.count++;
-    }
+    },
+
   },
   actions: {
     addcount : function(context){

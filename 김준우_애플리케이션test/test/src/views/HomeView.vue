@@ -15,7 +15,9 @@
         </td>
         <td>{{board.count}}</td>
       </tr>
+
     </table>
+
   </div>
 </template>
 
@@ -28,7 +30,7 @@ export default {
     addcount : function(){
       this.$store.dispatch('addcount')
     }
-  }
+  },
 }
 </script>
 
