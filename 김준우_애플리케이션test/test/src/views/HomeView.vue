@@ -13,7 +13,6 @@
         <td @click="addcount($router.push(`/board/${board.id}`))" >
         {{board.title}}
         </td>
-
         <td>{{board.count}}</td>
       </tr>
     </table>
@@ -25,6 +24,11 @@
 
 export default {
   name: 'HomeView',
+  methods : {
+    addcount : function(){
+      this.$store.dispatch('addcount')
+    }
+  }
 }
 </script>
 
