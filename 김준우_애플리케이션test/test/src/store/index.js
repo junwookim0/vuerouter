@@ -27,14 +27,9 @@ export default new Vuex.Store({
       state.memos.push({ id:id, memo:memo });
     },
 
-    addcount: function(state){
-      state.board.count++;
+    addcount: function(state, id){
+      state.board[id-1].count++;
     },
 
-  },
-  actions: {
-    addcount : function(context){
-      context.commit('addcount')
-    }
   },
 });

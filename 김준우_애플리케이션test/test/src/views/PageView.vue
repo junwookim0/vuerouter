@@ -2,6 +2,7 @@
     <div>
         <p>{{gettitle}}</p>
         <p>{{getmemo}}</p>
+        <button @click="$router.go(-1)">뒤로가기</button>
     </div>
 </template>
 

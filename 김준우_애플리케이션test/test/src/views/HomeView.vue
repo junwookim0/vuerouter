@@ -10,7 +10,7 @@
         <td>
         {{board.id}}
         </td>
-        <td @click="addcount($router.push(`/board/${board.id}`))" >
+        <td @click="addcount(board.id)" >
         {{board.title}}
         </td>
         <td>{{board.count}}</td>
@@ -27,8 +27,9 @@
 export default {
   name: 'HomeView',
   methods : {
-    addcount : function(){
-      this.$store.dispatch('addcount')
+    addcount : function(id){
+      this.$router.push(`/board/${id}`)
+      this.$store.commit('addcount',id)
     }
   },
 }
